@@ -49,12 +49,6 @@ router.post('/brands', createBrand);
  *     responses:
  *       200:
  *         description: Lista de marcas
- *         content:
- *           application/json:
- *             schema:
- *               type: array
- *               items:
- *                 $ref: '#/components/schemas/Brand'
  *       500:
  *         description: Erro no servidor
  */
@@ -76,10 +70,6 @@ router.get('/brands', getBrands);
  *     responses:
  *       200:
  *         description: Marca encontrada
- *         content:
- *           application/json:
- *             schema:
- *               $ref: '#/components/schemas/Brand'
  *       400:
  *         description: ID inválido
  *       404:

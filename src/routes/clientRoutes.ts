@@ -56,12 +56,6 @@ router.post('/clients', createClient);
  *     responses:
  *       200:
  *         description: Lista de clientes
- *         content:
- *           application/json:
- *             schema:
- *               type: array
- *               items:
- *                 type: object
  */
 router.get('/clients', getClients);
 

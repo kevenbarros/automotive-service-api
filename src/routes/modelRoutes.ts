@@ -52,12 +52,6 @@ router.post('/models', createModel);
  *     responses:
  *       200:
  *         description: Lista de modelos
- *         content:
- *           application/json:
- *             schema:
- *               type: array
- *               items:
- *                 $ref: '#/components/schemas/Model'
  *       500:
  *         description: Erro no servidor
  */
@@ -79,10 +73,6 @@ router.get('/models', getModels);
  *     responses:
  *       200:
  *         description: Modelo encontrado
- *         content:
- *           application/json:
- *             schema:
- *               $ref: '#/components/schemas/Model'
  *       400:
  *         description: ID inválido
  *       404:

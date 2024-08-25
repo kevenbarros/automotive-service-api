@@ -157,12 +157,6 @@ router.get('/services/:id', getServiceById);
  *     responses:
  *       200:
  *         description: Lista de serviços filtrados.
- *         content:
- *           application/json:
- *             schema:
- *               type: array
- *               items:
- *                 $ref: '#/components/schemas/Service'
  *       400:
  *         description: Erro nos parâmetros fornecidos.
  *         content:
